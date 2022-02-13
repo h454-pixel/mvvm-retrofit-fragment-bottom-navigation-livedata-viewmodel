@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   >
+
+
+    <CheckBox
+        android:id="@+id/ch_box"
+        android:layout_width="100dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.HomeActivity"
+        android:orientation="vertical"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:layout_weight="2"
+                android:background="#FAF9F8"
+                android:orientation="vertical"
+
+                >
+
+                <ImageView
+                    android:id="@+id/image_1"
+                    android:layout_width="110dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/desine"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_mobilenumber"></ImageView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:orientation="vertical"
+                android:background="#FAF9F8"
+                android:layout_weight="1">
+
+
+                <TextView
+                    android:id="@+id/txt_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="John doe"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="20dp"
+                    android:textColor="#0771C6"
+                    android:textSize="25dp"
+                    ></TextView>
+
+                <TextView
+                    android:id="@+id/txt_job"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ios developer"
+                    android:paddingLeft="20dp"
+                    android:textColor="#0771C6"
+                    android:textSize="20dp"
+                    ></TextView>
+
+                <TextView
+                    android:id="@+id/txt_emid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:paddingLeft="15dp"
+                    android:drawablePadding="5dp"
+                    android:text="kkfdfjjf@gmail.com"
+                    android:drawableStart="@drawable/ic_mail"
+                    android:textColor="#0771C6"
+                    android:textSize="20dp"></TextView>
+
+                <TextView
+                    android:id="@+id/txt_ph"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="967850696"
+                    android:drawableLeft="@drawable/ic_mobilenumber"
+                    android:drawablePadding="5dp"
+                    android:paddingLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#0771C6"
+                    android:textSize="20dp"
+                    ></TextView>
+
+                <TextView
+                    android:id="@+id/txt_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="distict dungarpur rajasthan"
+                    android:drawableLeft="@drawable/ic_address"
+                    android:paddingLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:drawablePadding="5dp"
+                    android:textColor="#0771C6"
+                    android:textSize="12dp"
+                    ></TextView>
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+ </RelativeLayout>
